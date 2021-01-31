@@ -3,7 +3,18 @@
 # Copyright (C) 2020-2021 Markus J. Weber
 # License: See accompanying file 'LICENSE.md'
 
+"""
+    module Multinomials
 
+Compute multinomial coefficients and natively iterate over multinomial expansions in Julia.
+
+Exported functions are:
+
+    multinomial(m,n)
+
+    eachmultinomial(m,n)
+
+"""
 module Multinomials
 
 export multinomial, eachmultinomial
@@ -85,15 +96,3 @@ end  # module Multinomials
 
 # end of file
 
-
-# tests
-
-using .Multinomials
-
-it = eachmultinomial(3,3)
-
-println("Length ", length(it))
-
-for ks in it
-    println(ks)
-end
