@@ -8,16 +8,18 @@ Status: In development, ready for public testing and comments.
 
 ## Motivation
 
-For some computations it is beneficial to apply the multinomial theorem to
-save computational effort.
+Computing a power series or differentiation with respect to several variables
+in a convenient iteration scheme.  Thus, an iterator is provided performing
+the expansion
 
-``(x_1 + x_2  + \cdots + x_m)^n = \sum_{k_1+k_2+\cdots+k_m=n} {n \choose k_1, k_2, \ldots, k_m} \prod_{t=1}^m x_t^{k_t}``
-and
-``{n \choose k_1, k_2, \ldots, k_m} = \frac{n!}{k_1!\, k_2! \cdots k_m!}``
+![Wikipedia Multinomial Theorem](https://wikimedia.org/api/rest_v1/media/math/render/svg/dccd561875a89864a7def8fbf7d8c9405234bbeb)
 
-See
-[Multinomial Theorem (Wikipedia)](https://en.wikipedia.org/wiki/Multinomial_theorem)
-for an explanation and possible applications.
+and computing the multinomial coefficients
+
+![Wikipedia Multinomial Coefficients](https://wikimedia.org/api/rest_v1/media/math/render/svg/3c7165fdb93f8d28ab738a85570ce10529dcdad8)
+
+The above equations are taken from the page [Multinomial Theorem (Wikipedia)](https://en.wikipedia.org/wiki/Multinomial_theorem)
+giving further explanation and applications.
 
 
 ## Methods
